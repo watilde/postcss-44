@@ -1,0 +1,25 @@
+{
+    "use": [
+        "autoprefixer",
+        "postcss-import",
+        "postcss-simple-vars",
+        "postcss-extend",
+        "postcss-nested",
+        "postcss-mixins",
+        "cssnano"
+    ],
+    "input": "src/scss/*.css",
+    "dir": "public/assets/css/",
+    "local-plugins": true,
+    "watch": true,
+    "map": "file",
+    "parser" : "postcss-scss",
+    "autoprefixer": {
+        "browsers": [ "Explorer >= 11", "Edge >= 13", "Firefox ESR", "Opera 37", "safari >= 9", "Chrome >= 50", "ChromeAndroid >= 47", "last 3 iOS versions" ]
+    },
+    "cssnano": {
+        "safe": true,
+        "mergeRules": false,
+        "browsers": [ "Explorer >= 11", "Edge >= 13", "Firefox ESR", "Opera 37", "safari >= 9", "Chrome >= 50", "ChromeAndroid >= 47", "last 3 iOS versions" ]
+    }
+}
